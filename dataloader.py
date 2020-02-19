@@ -17,7 +17,7 @@ def load(years = range(2007,2021)):
     Parameters
     ----------
     years : iterable
-        Fire incidents of these years will be imported. The default is range(2007,2021).
+        Fire incidents of these years will be imported. The default is range(2007,2020).
 
     Returns
     -------
@@ -83,6 +83,35 @@ def clean_concat_data():
             
     data.to_csv(r'./data/all_fd_incidents.csv')
     
+def fire_stations_zip():
+    '''
+    
+
+    Returns
+    -------
+    dict_zip : dict
+        number of fire stations in corresponding zip codes
+
+    '''
+    
+    # load zipcodes
+    try:
+        f = open('./data/fire_station_zip.txt', 'r')
+        str_zip_codes = f.readline()
+        f.close()
+    except FileNotFoundError:
+        print('No fire_station_zip.txt exist')
+    str_zip_codes = str_zip_codes.split(', ')
+    zip_codes = [int(zip_code) for zip_code in str_zip_codes]    
+    
+    dict_zip = dict()
+    for ele in zip_codes:
+        if ele not in dict_zip.keys():
+            dict_zip[ele] = 1
+        else:
+            dict_zip[ele] += 1
+
+    return dict_zip
 
 if __name__ == '__main__':
     
