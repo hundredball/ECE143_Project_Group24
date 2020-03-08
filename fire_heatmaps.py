@@ -79,7 +79,10 @@ def plot_fire_heatmap(san_diego, years, with_fire_station=False):
     years_san_diego['incident_number'] = years_san_diego['incident_number'].fillna(0.0).astype(int)
     
     # plot san diego map with incidents
-    title = 'Incidents over %d-%d'%(years[0],years[-1])
+    if len(years) == 1:
+        title = 'Number of incidents in %d'%(years[0])
+    else:
+        title = 'Incidents over %d-%d'%(years[0],years[-1])
     ax = years_san_diego.plot(column = 'incident_number', scheme = 'quantiles', legend=True, cmap = 'OrRd', figsize=(12,20))
     
     # combine with fire station
@@ -89,6 +92,7 @@ def plot_fire_heatmap(san_diego, years, with_fire_station=False):
         gdf.plot(ax = ax, color = 'blue')
     
     plt.title(title)
+    plt.axis('off')
     plt.savefig('Incidents_over_%d-%d'%(years[0],years[-1])+'.png')
     plt.show()    
     
@@ -123,7 +127,10 @@ def plot_incidents_per_station(san_diego, years, with_fire_station=False):
     years_san_diego = san_diego.merge(incidents_per_station_df, on = 'address_zip', how = 'inner')
     
     # plot the heatmap
-    title = 'Number of incidents per station over %d-%d'%(years[0], years[-1])
+    if len(years) == 1:
+        title = 'Number of incidents per station in %d'%(years[0]);
+    else:
+        title = 'Number of incidents per station over %d-%d'%(years[0], years[-1])
     ax = years_san_diego.plot(column = 'incidents_per_station', scheme = 'quantiles', legend=True, cmap = 'OrRd', figsize=(12,20))
     
     # combine with fire station
@@ -189,12 +196,12 @@ if __name__=='__main__':
     san_diego = san_diego.reset_index()
     san_diego.rename(columns = {'zip':'address_zip'}, inplace = True)
     
-    years = range(2019,2020)
+    years = range(2010,2011)
     
-    plot_fire_heatmap(san_diego, years, with_fire_station=True)
+    plot_fire_heatmap(san_diego, years, with_fire_station=False)
     
-    plot_incidents_per_station(san_diego, years, with_fire_station=False)
+    #plot_incidents_per_station(san_diego, years, with_fire_station=False)
     
-    plot_std_incidents(years)
+    #plot_std_incidents(years)
     
     
