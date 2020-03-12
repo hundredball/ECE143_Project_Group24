@@ -9,17 +9,9 @@ Created on Thu Mar 12 16:03:50 2020
 
 
 import pandas as pd
-# import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
-# import os
-# import glob
 import seaborn as sns
-# import functools
-# from datetime import datetime
-# from sorted_months_weekdays import *
-
-# from sort_dataframeby_monthorweek import *
 
 
 def yearly_trends(df, pop_df):
