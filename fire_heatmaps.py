@@ -93,7 +93,7 @@ def plot_fire_heatmap(san_diego, years, with_fire_station=False):
     
     plt.title(title)
     plt.axis('off')
-    plt.savefig('Incidents_over_%d-%d'%(years[0],years[-1])+'.png')
+    #plt.savefig('Incidents_over_%d-%d'%(years[0],years[-1])+'.png')
     plt.show()    
     
 def plot_incidents_per_station(san_diego, years, with_fire_station=False):
@@ -140,7 +140,7 @@ def plot_incidents_per_station(san_diego, years, with_fire_station=False):
         gdf.plot(ax = ax, color = 'blue')
         
     plt.title(title)
-    plt.savefig('incidents_per_station_%d-%d'%(years[0], years[-1])+'.png')
+    #plt.savefig('incidents_per_station_%d-%d'%(years[0], years[-1])+'.png')
     plt.show()
     
 def plot_std_incidents(years):
@@ -184,7 +184,7 @@ def plot_std_incidents(years):
     plt.xlabel('number of added fire stations')
     plt.ylabel('std of number of incidents per station')
     plt.title(title)
-    plt.savefig('std_incidents_per_station_%d-%d'%(years[0],years[-1]) + '.png')
+    #plt.savefig('std_incidents_per_station_%d-%d'%(years[0],years[-1]) + '.png')
     plt.show()
     
 
