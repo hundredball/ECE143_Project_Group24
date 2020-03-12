@@ -8,7 +8,6 @@ Created on Sat Mar  7 16:44:10 2020
 
 
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 import dataloader
@@ -49,7 +48,7 @@ def plot_category_over_years(fire_df, years):
     matplotlib.rc('xtick', labelsize=30) 
     matplotlib.rc('ytick', labelsize=30) 
     plt.title(title)
-    plt.savefig('call_category_%d-%d'%(years[0],years[-1]))
+    #plt.savefig('call_category_%d-%d'%(years[0],years[-1]))
     plt.show()
 
 if __name__ == '__main__':

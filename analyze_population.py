@@ -41,7 +41,7 @@ def plot_population_heatmap(san_diego, years):
         
     plt.axis('off')
     plt.title(title)
-    plt.savefig('San_Diego_Population_%d-%d'%(years[0], years[-1]))
+    #plt.savefig('San_Diego_Population_%d-%d'%(years[0], years[-1]))
     plt.show()
     
 if __name__ == '__main__':

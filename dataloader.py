@@ -7,8 +7,6 @@ Created on Thu Feb  6 10:20:43 2020
 """
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 
 def load(years = range(2007,2021)):
     '''
@@ -115,16 +113,7 @@ def fire_stations_zip():
 
 if __name__ == '__main__':
     
-    # check if types of properties of every years are unified
-    data = load()
-    years = list(range(2007, 2021))
-    type_properties = []
-    
-    for prop in data.columns:
-        elements = data[prop].unique()
-        same_type_unique_prop = all(type(unique_prop)==type(elements[0]) \
-                                     for unique_prop in elements)
-        type_properties.append(same_type_unique_prop)
+    clean_concat_data()
 
 
 
