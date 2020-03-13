@@ -22,12 +22,15 @@ This command sets the environment named 'ECE143_Group24', which has all the requ
 GeoPandas library is required for map visualization.
 
 
-To install GeoPandas and all its dependencies, it is recommended to use the conda package manager using the following command `conda install geopandas`  
+To install GeoPandas and all its dependencies, it is recommended to use the conda package manager by running the following command `conda install geopandas`  
 
 
 More information available at https://geopandas.org/install.html.  
 ## Data
-Download the data from google drive https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing   
+Download the data from google drive link below  
+https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing
+
+
 Put the 'data' folder in the same directory as the python file and notebook from this repository  
 
 
