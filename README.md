@@ -8,7 +8,7 @@ Pandas
 Geopandas
 ## Installation
 Download the data first (https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing)   
-Put the 'data' folder in the same directory of python files  
+Put the 'data' folder in the same directory as python files  
 
 
 GeoPandas is required. Follow the instruction of https://geopandas.org/install.html.  
