@@ -15,11 +15,11 @@ Matplotlib
 Pandas  
 Geopandas
 ## Installation
-Download the data first (https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing)   
+Download the data from google drive location (https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing)   
 Put the 'data' folder in the same directory as python files  
 
 
-GeoPandas is required. Follow the instruction of https://geopandas.org/install.html.  
+GeoPandas is required. Follow the instruction at https://geopandas.org/install.html.  
 Version: Python 3.7.5
 
 ### Environment Setup
