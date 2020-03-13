@@ -6,7 +6,7 @@ Put the 'data' folder in the same directory of python files
 
 GeoPandas is required. Follow the instruction of https://geopandas.org/install.html.  
 Version: Python 3.7.5  
-Command: conda env create -f environment.yml
+Command: conda env create -f environment.yml  
 This command sets the environment named 'ECE143_Group24', which has all the required packages to run the code. 
 ## Data
 'data' folder includes the raw data of incidents from 2007 to 2020, and the processed data of the overall years. Additionally, it also contains zip codes, positions of fire stations, geographic information of San Diego, and the populations according to zip code and years. All of the data are specific for San Diego.
