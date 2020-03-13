@@ -1,8 +1,8 @@
 # ECE143 Project Group 2: San Diego Fire and EMS Incidents
 ## Preparation
-Download the data first (https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing)  
-Put the 'data' folder in the same directory of python files
-GeoPandas is required. Follow the instruction of https://geopandas.org/install.html. 
+Download the data first (https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing)   
+Put the 'data' folder in the same directory of python files  
+GeoPandas is required. Follow the instruction of https://geopandas.org/install.html.  
 Version: Python 3.7.5
 ## Data
 'data' folder includes the raw data of incidents from 2007 to 2020, and the processed data of the overall years. Additionally, it also contains zip codes, positions of fire stations, geographic information of San Diego, and the populations according to zip code and years. All of the data are specific for San Diego.
