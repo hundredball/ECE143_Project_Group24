@@ -1,5 +1,8 @@
 # ECE143 Project Team 24: San Diego Fire and EMS Incidents
-Analyzing fire and ems incident calls in San Diego. Visualize yearly, monthly and daily trends of fire incidents. Comparing incident rate to population data. Map incident rate across San Diego zip codes
+This project analyzes fire and ems incident calls in San Diego. Python notebook contains:  
+1. Visualization of yearly, monthly and daily trends of fire incidents  
+2. Comparison of incident rate to population data  
+3. Mapping incident rate and population data across San Diego zip codes
 
 ## Requirements
 Python 3.75    
