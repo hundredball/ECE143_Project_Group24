@@ -1,5 +1,8 @@
 # ECE143 Project Team 24: San Diego Fire and EMS Incidents
-This project analyzes fire and ems incident calls in San Diego. Python notebook contains:  
+This project analyzes fire and ems incident calls in San Diego.    
+Plots and visualiztion shown on slides are contained on python notebook. Python notebook contains:  
+
+
 1. Distribution of incident call categories  
 2. Visualization of yearly, monthly and daily trends of fire incidents  
 3. Mapping incident rate and population data across San Diego zip codes    
@@ -30,4 +33,3 @@ This command concatenates the raw data of every years, removes the data with inc
 This process may takes over an hour. 
 ## Result
 Open 'Final_plots.ipynb' and run the codes.  
-All the plots presented in the slides are included in jupyter notebook. 
