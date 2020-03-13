@@ -1,4 +1,8 @@
 # ECE143 Project Group 2: San Diego Fire and EMS Incidents
+## Library Requirements
+matplotlib
+Pandas
+Geopandas
 ## Preparation
 Download the data first (https://drive.google.com/file/d/11oMf0BE1kqd8apaxumLzH4Budo28zPlX/view?usp=sharing)   
 Put the 'data' folder in the same directory of python files  
