@@ -2,7 +2,7 @@
 Analyzing fire and ems incident calls in San Diego. Visualize yearly, monthly and daily trends of fire incidents. Comparing incident rate to population data. Map incident rate across San Diego zip codes
 
 ## Requirements
-Python 3  
+Python 3.75    
 Matplotlib  
 Pandas  
 Geopandas
