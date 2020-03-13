@@ -34,7 +34,7 @@ Put the 'data' folder in the same directory as the python file and notebook from
 `data` folder includes the raw data of incidents from 2007 to 2020, and the processed data of the overall years. Additionally, it also contains zip codes, positions of fire stations, geographic information of San Diego, and the populations according to zip code and years. All of the data are specific for San Diego.
 ## Data cleaning
 `python dataloader.py`  
-This command concatenates the raw data of every years, removes the data with incorrect zip codes, unifies the types of each column, and finally outputs 'all_fd_incidents.csv', which is already exists in 'data' folder.
+This command concatenates the raw data of every years, removes the data with incorrect zip codes, unifies the types of each column, and finally outputs `all_fd_incidents.csv`, which already exists in 'data' folder.
 
 
 This process may takes over an hour. 
